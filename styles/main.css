@@ -10,10 +10,15 @@ html {
   font-size: 62.5%;
 }
 
-.header {
-  padding-left: 3%;
-  padding-right: 3%;
+section {
+  margin: 20px 0;
 }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .header nav ul {
   display: flex;
   justify-content: space-between;
@@ -45,6 +50,7 @@ html {
   background-color: #000000;
   padding: 4px 10px;
   border-radius: 10%;
+  display: flex;
 }
 .header .nav_items .signup_btn a {
   color: white;
@@ -58,5 +64,79 @@ html {
 @media only screen and (max-width: 600px) {
   .nav_items {
     display: none !important;
+  }
+}
+.banner {
+  background-color: #c2c8da;
+  border-radius: 20px;
+  padding: 10px 10px;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+}
+
+.bannerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bannerText h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+.bannerText .textbg {
+  background: url(../../images/text_rectengle_bg.png);
+}
+.bannerText p {
+  font-size: 2rem;
+  padding-left: 5%;
+  margin-top: 2%;
+}
+.bannerText .btndiv {
+  width: 80%;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: 1fr 1.9fr;
+}
+.bannerText .btndiv .btnStyle {
+  width: 100%;
+}
+.bannerText .btndiv .btnShop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bannerText .btndiv .btnShop a {
+  color: white;
+  text-decoration: none;
+  background-color: #000000;
+  padding: 4px 10px;
+  border-radius: 10%;
+  display: flex;
+  font-size: 2rem;
+}
+.bannerText .btndiv .btnShop a a {
+  color: white;
+  text-decoration: none;
+}
+
+.bannerImage img {
+  width: 100%;
+  margin: 0 auto;
+  max-height: 580px;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    background-color: #c2c8da;
+    border-radius: 20px;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+  }
+  .bannerImage {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
