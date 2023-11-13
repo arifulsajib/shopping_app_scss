@@ -1,0 +1,18 @@
+// mixin
+@mixin flexCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@mixin btnBlack {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  color: white;
+  text-decoration: none;
+  background-color: $black;
+  padding: 4px 10px;
+  border-radius: 10%;
+}

@@ -1,0 +1,46 @@
+.header {
+  padding-left: 3%;
+  padding-right: 3%;
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+
+  .nav_items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $white;
+    font-size: 1.8rem;
+    li {
+      padding: 0 10px;
+    }
+    li a {
+      text-decoration: none;
+      color: $black;
+      padding: 2px 6px;
+      border-radius: 10%;
+      &:hover {
+        background-color: $black;
+        color: $white;
+      }
+    }
+
+    .signup_btn {
+      @include btnBlack;
+    }
+  }
+
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav_items {
+    display: none !important;
+  }
+}
