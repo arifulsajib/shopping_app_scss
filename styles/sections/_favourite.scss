@@ -1,0 +1,12 @@
+.youngsFav {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  .favHeader {
+    font-size: 3rem;
+  }
+}
+.favItems {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2%;
+}

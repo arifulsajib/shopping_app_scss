@@ -11,7 +11,7 @@ html {
 }
 
 section {
-  margin: 20px 0;
+  margin: 35px 0;
 }
 
 .container {
@@ -142,14 +142,14 @@ section {
 }
 #partners {
   margin-top: 20px;
-  background-color: #e6c744;
+  background-color: #ffec61;
 }
 
 .partners {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #e6c744;
+  background-color: #ffec61;
 }
 .partners img {
   max-width: 120px;
@@ -200,10 +200,97 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
+  .arrItems {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .itemInfo h3 {
     font-size: 1.5rem;
   }
   .itemInfo p {
     font-size: 1rem;
   }
+}
+.saleDay {
+  background-color: #ffec61;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.saleInfo {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.saleInfo .recBg {
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-right: 2%;
+  display: inline;
+  background: url(../../images/text_rect_white.png);
+  background-repeat: no-repeat;
+}
+.saleInfo h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+.saleInfo p {
+  font-size: 1.7rem;
+  width: 70%;
+}
+.saleInfo h3 {
+  margin-top: 2%;
+  font-size: 2rem;
+}
+.saleInfo .btnShop {
+  margin-top: 12px;
+}
+.saleInfo .btnShop a {
+  font-size: 2rem;
+  padding: 8px 15px;
+  text-decoration: none;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 5%;
+}
+
+.saleImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.saleImg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .saleDay {
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: 1fr;
+  }
+  .saleInfo {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .saleInfo .btnShop {
+    margin-bottom: 40px;
+  }
+}
+.youngsFav {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.youngsFav .favHeader {
+  font-size: 3rem;
+}
+
+.favItems {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2%;
 }/*# sourceMappingURL=main.css.map */
