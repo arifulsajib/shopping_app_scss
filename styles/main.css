@@ -139,4 +139,18 @@ section {
   .bannerImage {
     display: none;
   }
+}
+#partners {
+  margin-top: 20px;
+  background-color: #e6c744;
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #e6c744;
+}
+.partners img {
+  max-width: 100px;
 }/*# sourceMappingURL=main.css.map */

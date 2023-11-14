@@ -1,0 +1,13 @@
+#partners {
+  margin-top: 20px;
+  background-color: $light_orange;
+}
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: $light_orange;
+  img {
+    max-width: 100px;
+  }
+}
