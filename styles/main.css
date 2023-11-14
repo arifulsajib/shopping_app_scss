@@ -152,5 +152,58 @@ section {
   background-color: #e6c744;
 }
 .partners img {
-  max-width: 100px;
+  max-width: 120px;
+}
+
+.newArrivals {
+  margin-bottom: 10px;
+}
+.newArrivals h1 {
+  font-size: 3rem;
+}
+
+.arrItems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2%;
+}
+
+.itemCard {
+  border-radius: 4%;
+  box-shadow: 8px 8px 5px #c2c8da;
+  margin: 5px 0;
+}
+
+.itemImg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.itemInfo {
+  padding: 0 4%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.itemInfo h3 {
+  font-size: 2.5rem;
+}
+.itemInfo p {
+  font-size: 1.8rem;
+}
+.itemInfo .itemArrow {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .itemInfo h3 {
+    font-size: 1.5rem;
+  }
+  .itemInfo p {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */

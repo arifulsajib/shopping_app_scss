@@ -1,0 +1,56 @@
+.newArrivals {
+  margin-bottom: 10px;
+  h1 {
+    font-size: 3rem;
+  }
+}
+.arrItems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2%;
+}
+
+.itemCard {
+  border-radius: 4%;
+  box-shadow: 8px 8px 5px $light_silver;
+  margin: 5px 0;
+}
+
+.itemImg {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.itemInfo {
+  padding: 0 4%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+  h3 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+
+  .itemArrow {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media only screen and (max-width: "600px") {
+  .itemInfo {
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
