@@ -1,0 +1,22 @@
+#footer {
+  padding: 2%;
+  background-color: $black;
+  color: rgb(223, 217, 217);
+}
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-gap: 3%;
+  h1 {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  i {
+    color: $light_orange;
+    font-size: 2.5rem;
+    padding-right: 3%;
+    margin-top: 8px;
+  }
+}
